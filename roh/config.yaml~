@@ -1,0 +1,16 @@
+inplink: /davidData/malthe/africa/gt/results/impala/plink/Goat_common_variable_sites_mergeblackfaced_nomultiallelics_noindels_6dp_3het_maf5pct
+outmain: results
+
+roh_pars:
+ min_kb_roh: 500
+ min_kb_den: 100
+ win_snps: 50
+ win_het: 4
+
+
+plot_pars:
+ mergedist:
+  - 0
+  - 1e5
+  - 5e5
+ 
