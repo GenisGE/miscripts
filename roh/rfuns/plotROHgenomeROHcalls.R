@@ -11,7 +11,7 @@ inrohs <- args[2]
 outpng <- args[3]
 s <- args[4]
 faifile <- args[5]
-mergedist <- 5e5
+mergedist <- args[6]
 
 
 cat("running with following parameters:\n")
