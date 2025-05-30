@@ -1,0 +1,144 @@
+pairs:
+ desert_tanzania:
+  - Desert
+  - Tanzania
+ desert_namibia:
+  - Desert
+  - Namibia
+ desert_ghana:
+  - Desert
+  - Ghana
+ namibia_ghana:
+  - Namibia
+  - Ghana
+ namibia_tanzania:
+  - Namibia
+  - Tanzania
+ tanzania_ghana:
+  - Tanzania
+  - Ghana
+models:
+ NOMIG:
+  funcname: no_mig
+  model_params:
+   - N1
+   - N2
+   - T
+  upper_bound:
+   - 10
+   - 10
+   - 20
+  lower_bound:
+   - 1e-2
+   - 1e-2
+   - 1e-6
+ IM:
+  funcname: sym_mig
+  model_params:
+   - N1
+   - N2
+   - m
+   - T
+  upper_bound:
+   - 10
+   - 10
+   - 5
+   - 20
+  lower_bound:
+   - 1e-2
+   - 1e-2
+   - 0
+   - 1e-6
+ ANCIM:
+  funcname: anc_sym_mig
+  model_params:
+   - N1
+   - N2
+   - m
+   - T1
+   - T2
+  upper_bound:
+   - 10
+   - 10
+   - 5
+   - 15
+   - 15
+  lower_bound:
+   - 1e-2
+   - 1e-2
+   - 0
+   - 1e-6
+   - 1e-6
+ SC:
+  funcname: sec_contact_sym_mig
+  model_params:
+   - N1
+   - N2
+   - m
+   - T1
+   - T2
+  upper_bound:
+   - 10
+   - 10
+   - 5
+   - 15
+   - 15
+  lower_bound:
+   - 1e-2
+   - 1e-2
+   - 0
+   - 1e-6
+   - 1e-6
+ IM_2MIG:
+  funcname: asym_mig
+  model_params:
+   - N1
+   - N2
+   - m12
+   - m21
+   - T
+  upper_bound:
+   - 10
+   - 10
+   - 5
+   - 5
+   - 20
+  lower_bound:
+   - 1e-2
+   - 1e-2
+   - 0
+   - 0
+   - 1e-6
+ SC_2MIG:
+  funcname: sec_contact_asym_mig
+  model_params:
+   - N1
+   - N2
+   - m12
+   - m21
+   - T1
+   - T2
+  upper_bound:
+   - 10
+   - 10
+   - 5
+   - 5
+   - 15
+   - 15
+  lower_bound:
+   - 1e-2
+   - 1e-2
+   - 0
+   - 0
+   - 1e-6
+   - 1e-6
+popn:
+ Desert: 4
+ Tanzania: 12
+ Namibia: 7
+ Ghana: 4
+outmain: results2_newinitialguess
+nruns: 20
+maxn: 500
+mu: 1.49e-08
+g: 6
